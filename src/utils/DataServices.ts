@@ -1,6 +1,6 @@
 const apiKey = '&appid=' + process.env.NEXT_PUBLIC_API_KEY
 
-console.log(process.env)
+console.log(apiKey)
 export async function WeekWeatherApiCall(city: string) {
     const promise = await fetch("https://api.openweathermap.org/data/2.5/forecast?q=" + city + apiKey + "&units=imperial");
     const data = await promise.json();
