@@ -1,4 +1,4 @@
-const apiKey = '&appid=' + process.env.API_KEY
+const apiKey = '&appid=' + process.env.NEXT_PUBLIC_API_KEY
 
 console.log(process.env)
 export async function WeekWeatherApiCall(city: string) {
